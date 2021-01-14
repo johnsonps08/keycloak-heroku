@@ -24,6 +24,10 @@
         "PROXY_ADDRESS_FORWARDING": {
             "description": "Set to true since we will be running behind Heroku's load balancers",
             "value": "true"
+        },
+        "DATABASE_URL": {
+            "description": "Provide the database URL to connect to",
+            "value": "postgres://{username}:{password}@{host}:5432/{dbName}"
         }
     },
     "formation": {
